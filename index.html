@@ -57,18 +57,20 @@
       // }
       // console.log(x)
       //bai 6
-      // let a = 0;
-      // let b = 1;
-      // let x = 0
-      // for (let i = 1 ; i <= 30 ; i++) {
-      //     if (a%7==0){
-      //         x+=a
-      //     }
-      //     let sum = a + b
-      //     a = b;
-      //     b = sum
-      // }
-      // console.log(x)
+      let sum = 0
+      let count = 1
+      let x = +prompt("nhap so vao")
+      for (let i = 0 ; i < 1000 ; i++){
+          if (count<=x){
+              if (i%7==0) {
+                  sum += i
+                  count++
+              }
+          }else {
+              break
+          }
+      }
+      console.log(sum)
     //bai 7
     //   for (let i = 1 ; i<= 100; i++) {
     //       if (i%3== 0){
